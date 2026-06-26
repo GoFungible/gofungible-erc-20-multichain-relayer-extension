@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.8.30;
+pragma solidity 0.8.30;
+
+import "../IMessageRelayer.sol";
 
 contract MockRelayer {
 
@@ -7,7 +9,7 @@ contract MockRelayer {
 
     function relayMessage(uint256 sourceChainId, uint256 destinationChainId, address sender, address destination, bytes calldata payload) external {
 
-        IRelayer(destination).receiveMessage(sourceChainId, sender, payload);
+        //IMessageRelayer(destination).receiveCrosschainMessage(sourceChainId, sender, payload);
 
         emit MessageRelayed(sourceChainId, destinationChainId, sender, destination, payload);
 				

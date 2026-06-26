@@ -1,9 +1,9 @@
 {
-  "name": "gofungible-interop-ierc20x",
+  "name": "gofungible-erc-20-multichain-relayer-extension",
   "version": "1.0.0",
   "private": true,
-	"scripts": {
-    "build": "npx solcjs --abi contracts/IRelayer.sol -o abi"
+  "scripts": {
+    "build": "npx solcjs --abi contracts/*.sol -o abi"
   },
   "devDependencies": {
     "solc": "^0.8.30"
