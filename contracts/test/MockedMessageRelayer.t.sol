@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.30;
 
-import "../../contracts/IMessageRelayer.sol";
+import "../IMessageRelayer.sol";
 
-contract MockMessageRelayer is IMessageRelayer {
+contract MockedMessageRelayer is IMessageRelayer {
 
     event MessageRelayed(uint256 indexed sourceChainId, uint256 indexed destinationChainId, address indexed sender, address destination, bytes payload);
 

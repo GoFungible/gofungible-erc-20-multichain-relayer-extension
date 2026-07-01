@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.30;
 
-import "../../contracts/ISupplySyncer.sol";
+import "../ISupplySyncer.sol";
 
-contract MockSupplySyncer is ISupplySyncer {
+contract MockedSupplySyncer is ISupplySyncer {
 
     event SupplySynced(uint256 fromChain, uint256 toChain, uint256 amount);
 

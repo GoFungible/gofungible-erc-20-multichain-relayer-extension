@@ -4,6 +4,11 @@
 # Production
 /build
 
+# Ignore all generated ABIs
+abi/
+build/
+dist/
+
 # Misc
 .DS_Store
 .env.local

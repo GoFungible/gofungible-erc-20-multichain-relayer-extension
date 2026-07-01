@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.30;
 
-import "../../contracts/IMultichainToken.sol";
+import "../IMultichainToken.sol";
 
-contract MockSupplyRelayer is IMultichainToken {
+contract MockedSupplyRelayer is IMultichainToken {
 
 	function receiveCrosschainSupply(uint256 sourceChain, uint256 destChain, uint256 amount) external {
 

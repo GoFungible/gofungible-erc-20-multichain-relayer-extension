@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "npx solcjs --abi contracts/*.sol -o abi"
+    "build": "npx solcjs --abi contracts/*.sol contracts/test/*.sol -o abi"
   },
   "devDependencies": {
     "solc": "^0.8.30"
