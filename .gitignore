@@ -5,9 +5,8 @@
 /build
 
 # Ignore all generated ABIs
-abi/
-build/
-dist/
+/abi
+/dist
 
 # Misc
 .DS_Store
