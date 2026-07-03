@@ -48,25 +48,23 @@ State of Arts
 
 A few ERC standards focused on crosschain messaging:
 
-	* EIP-7786 - Cross-Chain Messaging Gateway
-
 	* EIP-7841 - Cross-chain Message Format and Mailbox
 
-Other standards focused on crosschain execution:
-
-	* EIP-5164 - Cross-Chain Execution
-
-	* ERC-8121: Cross-Chain Function Calls via Hooks
-
-	* ERC-7683 - Crosschain Intents: Introduction
+	* EIP-7786 - Cross-Chain Messaging Gateway
 
 Other standards focused on crosschain bridging:
 
 	* ERC-7802 - Crosschain Token Interface
 
-	* ERC-7281: Sovereign Bridged Tokens - xERC20 Standard. xERC20 is a widely supported open token standard, aimed at solving the liquidity, fungibility, and security issues seen today with bridged ERC20s.
+	* ERC-7281 - Sovereign Bridged Tokens - xERC20 Standard. xERC20 is a widely supported open token standard, aimed at solving the liquidity, fungibility, and security issues seen today with bridged ERC20s.
 
+Other standards focused on crosschain execution:
 
+	* EIP-5164 - Cross-Chain Execution
+
+	* ERC-8121 - Cross-Chain Function Calls via Hooks
+
+	* ERC-7683 - Crosschain Intents: Introduction
 
 
 Specification
