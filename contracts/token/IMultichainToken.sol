@@ -11,4 +11,12 @@ interface IMultichainToken {
 
 	function onSwap(uint256 destChain, address destAddress, uint256 amount) external;
 
+	event CrosschainMessageReceived(uint256 fromChain, uint256 toChain, uint256 amount);
+
+	event CrosschainSupplyReceived(uint256 fromChain, uint256 toChain, uint256 amount);
+
+	event CrosschainSyncSupplyReceived(uint256 fromChain, uint256 toChain, uint256 amount);
+
+	event CrosschainSwapReceived(uint256 fromChain, uint256 toChain, uint256 amount);
+
 }
