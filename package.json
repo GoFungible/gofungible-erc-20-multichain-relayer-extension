@@ -6,6 +6,6 @@
     "build": "npx solcjs --abi contracts/relayers/*.sol contracts/token/*.sol contracts/mock/*.sol -o abi"
   },
   "devDependencies": {
-    "solc": "^0.8.30"
+    "solc": "0.8.30"
   }
 }
