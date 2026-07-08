@@ -9,6 +9,4 @@ interface IMessageRelayer is IRelayer{
 
 	function sendCrosschainMessage(uint32 destChain, address destAddress, string calldata _message) external;
 
-	function onCrosschainMessage(uint32 destChain, address destAddress, uint256 amount) external;
-
 }
