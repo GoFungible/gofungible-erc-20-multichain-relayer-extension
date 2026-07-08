@@ -5,7 +5,6 @@ import "../relayers/ISupplyRelayer.sol";
 
 contract MockedSupplyRelayer is ISupplyRelayer {
 
-	event MessageRelayed(uint256 indexed sourceChainId, uint256 indexed destinationChainId, address indexed sender, address destination, bytes payload);
 
 	function sendCrosschainSupply(uint256 destChain, address destAddress, uint256 amount) external {
 
