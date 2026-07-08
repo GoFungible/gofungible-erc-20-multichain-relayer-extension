@@ -6,19 +6,11 @@ import "../relayers/ISupplyRelayer.sol";
 contract MockedSupplyRelayer is ISupplyRelayer {
 
 
-	function sendCrosschainSupply(uint256 destChain, address destAddress, uint256 amount) external {
+	function sendCrosschainSupply(uint256 destChain, address destAddress, uint256 amount) external override {
 
 	}
 
-	function registerReceiver(address _receiver) external {
-
-	}
-
-	function unregisterReceiver(address _receiver) external {
-
-	}
-
-	function onCrosschainSupply(uint256 destChain, address destAddress, uint256 amount) external {
+	function onCrosschainSupply(uint256 destChain, address destAddress, uint256 amount) external override {
 		
 	}
 

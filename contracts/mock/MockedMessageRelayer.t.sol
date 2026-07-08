@@ -5,21 +5,13 @@ import "../relayers/IMessageRelayer.sol";
 
 contract MockedMessageRelayer is IMessageRelayer {
 
-    function sendCrosschainMessage(uint256 destChain, address destAddress, uint256 amount) external {
+    function sendCrosschainMessage(uint256 destChain, address destAddress, uint256 amount) external override {
 
 
         //emit MessageRelayed(sourceChainId, destinationChainId, sender, destination, payload);
 		}
 
-    function registerReceiver(address _receiver) external {
-
-		}
-
-    function unregisterReceiver(address _receiver) external {
-
-		}
-
-    function onCrosschainMessage(uint256 destChain, address destAddress, uint256 amount) external {
+    function onCrosschainMessage(uint256 destChain, address destAddress, uint256 amount) external override {
 
 		}
 

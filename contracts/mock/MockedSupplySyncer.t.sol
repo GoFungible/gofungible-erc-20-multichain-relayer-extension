@@ -7,19 +7,11 @@ contract MockedSupplySyncer is ISupplySyncer {
 
 	event SupplySynced(uint256 fromChain, uint256 toChain, uint256 amount);
 
-	function syncSupplies(uint256[] memory onChains, uint256 fromChain, uint256 toChain, uint256 amount) external {
+	function syncSupplies(uint256[] memory onChains, uint256 fromChain, uint256 toChain, uint256 amount) external override {
 
 	}
 
-	function registerReceiver(address _receiver) external {
-
-	}
-
-	function unregisterReceiver(address _receiver) external {
-
-	}
-
-	function onSyncSupplies(uint256[] memory onChains, uint256 fromChain, uint256 toChain, uint256 amount) external {
+	function onSyncSupplies(uint256[] memory onChains, uint256 fromChain, uint256 toChain, uint256 amount) external override {
 
 	}
 
