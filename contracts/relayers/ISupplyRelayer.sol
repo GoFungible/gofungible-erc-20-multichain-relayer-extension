@@ -5,10 +5,8 @@ import "./IRelayer.sol";
 
 interface ISupplyRelayer is IRelayer {
 
-	event SupplyRelayed(uint256 indexed sourceChainId, uint256 indexed destinationChainId, address indexed sender, address destination, bytes payload);
+	event SupplyRelayed(uint256 toChain, address toAddress, uint256 amount);
 
-	function sendCrosschainSupply(uint256 destChain, address destAddress, uint256 amount) external;
-
-	function onCrosschainSupply(uint256 destChain, address destAddress, uint256 amount) external;
+	function sendCrosschainSupply(uint256 toChain, address toAddress, uint256 amount) external;
 
 }

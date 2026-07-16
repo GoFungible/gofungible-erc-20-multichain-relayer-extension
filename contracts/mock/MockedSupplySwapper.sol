@@ -9,8 +9,4 @@ contract MockedSupplySwapper is ISupplySwapper {
 
 	}
 
-	function onSwap(uint256 destChain, address destAddress, uint256 amount) external override {
-
-	}
-
 }

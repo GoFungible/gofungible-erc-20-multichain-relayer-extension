@@ -5,7 +5,7 @@ import "../token/IMultichainToken.sol";
 
 contract MockedMultichainToken is IMultichainToken {
 
-	function onCrosschainMessage(uint256 destChain, address destAddress, uint256 amount) external override {
+	function onCrosschainMessage(uint256 fromChain, address destAddress, uint256 amount) external override {
 
 	}
 

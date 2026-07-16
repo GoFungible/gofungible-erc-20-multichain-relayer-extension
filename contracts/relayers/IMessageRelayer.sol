@@ -5,8 +5,8 @@ import "./IRelayer.sol";
 
 interface IMessageRelayer is IRelayer{
 
-	event MessageRelayed(uint256 indexed sourceChainId, uint256 indexed destinationChainId, address indexed sender, address destination, bytes payload);
+	event MessageRelayed(uint32 toChain, address toAddress, string message);
 
-	function sendCrosschainMessage(uint32 destChain, address destAddress, string calldata _message) external;
+	function sendCrosschainMessage(uint32 toChain, address toAddress, string calldata message) external;
 
 }

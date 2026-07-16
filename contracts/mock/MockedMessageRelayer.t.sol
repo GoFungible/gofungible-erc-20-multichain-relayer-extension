@@ -5,7 +5,7 @@ import "../relayers/IMessageRelayer.sol";
 
 contract MockedMessageRelayer is IMessageRelayer {
 
-    function sendCrosschainMessage(uint32 destChain, address destAddress, string calldata _message) external override {
+    function sendCrosschainMessage(uint32 destChain, address destAddress, string calldata message) external override {
 
 		}
 

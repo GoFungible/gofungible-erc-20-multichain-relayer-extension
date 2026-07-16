@@ -9,6 +9,4 @@ interface ISupplySyncer is IRelayer {
 
 	function syncSupplies(uint256[] memory onChains, uint256 fromChain, uint256 toChain, uint256 amount) external;
 
-	function onSyncSupplies(uint256[] memory onChains, uint256 fromChain, uint256 toChain, uint256 amount) external;
-
 }

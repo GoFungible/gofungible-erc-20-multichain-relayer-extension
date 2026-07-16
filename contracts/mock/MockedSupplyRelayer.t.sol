@@ -10,8 +10,4 @@ contract MockedSupplyRelayer is ISupplyRelayer {
 
 	}
 
-	function onCrosschainSupply(uint256 destChain, address destAddress, uint256 amount) external override {
-		
-	}
-
 }

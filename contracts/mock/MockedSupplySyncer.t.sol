@@ -11,8 +11,4 @@ contract MockedSupplySyncer is ISupplySyncer {
 
 	}
 
-	function onSyncSupplies(uint256[] memory onChains, uint256 fromChain, uint256 toChain, uint256 amount) external override {
-
-	}
-
 }
