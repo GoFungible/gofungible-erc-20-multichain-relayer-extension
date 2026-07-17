@@ -5,8 +5,10 @@ import "./IRelayer.sol";
 
 interface ISupplyRelayer is IRelayer {
 
-	event SupplyRelayed(uint256 toChain, address toAddress, uint256 amount);
-
 	function sendCrosschainSupply(uint256 toChain, address toAddress, uint256 amount) external;
+
+	event CrosschainSupplySent(uint256 toChain, address toAddress, uint256 amount);
+
+	event CrosschainSupplyReceived(uint256 fromChain, address fromAddress, uint256 amount);
 
 }
