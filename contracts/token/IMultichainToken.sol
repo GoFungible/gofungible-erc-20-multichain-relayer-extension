@@ -9,6 +9,6 @@ interface IMultichainToken {
 
 	function onSwap(uint256 fromChain, address fromAddress, uint256 amount) external;
 
-	function onSyncSupplies(uint256[] memory onChains, uint256 fromChain, uint256 toChain, uint256 amount) external;
+	function onSyncSupplies(uint256 fromChain, uint256 toChain, uint256 amount, bytes32 checksum) external;
 
 }
