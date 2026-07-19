@@ -13,12 +13,8 @@ contract MockedMultichainToken is IMultichainToken {
 
 	}
 
-	function onSyncSupplies(uint256 fromChain, uint256 toChain, uint256 amount, bytes32 checksum) external {
+	function onSyncSupplies(uint256 onChain, address onAddress, uint256 fromChain, uint256 toChain, uint256 amount, bytes32 checksum) external {
 
-	}
-
-	function onSwap(uint256 destChain, address destAddress, uint256 amount) external override {
-		
 	}
 
 }
